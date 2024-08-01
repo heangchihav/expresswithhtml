@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Login Form</h1>
+      <br />
+      <hr />
+      <br />
+      <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <input type="hidden" id="csrfToken" name="_csrf" />
+        <button type="submit">Login</button>
+      </form>
+      <p id="response"></p>
+      <button id="googleLoginButton">Login with Google</button>
+    </main>
+    <script src="/js/indexScript.js"></script>
+  </body>
+</html>
